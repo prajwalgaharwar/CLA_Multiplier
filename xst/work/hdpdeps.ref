@@ -1,0 +1,6 @@
+V3 3
+FL $XILINX/cla_vhdl/cla.vhd 2016/03/20.21:35:47 J.36
+EN work/cla 1458489967 FL $XILINX/cla_vhdl/cla.vhd PB ieee/std_logic_1164 1177545575 \
+      PB ieee/std_logic_arith 1177545576 PB ieee/STD_LOGIC_UNSIGNED 1177545583
+AR work/cla/dataflow 1458489968 \
+      FL $XILINX/cla_vhdl/cla.vhd EN work/cla 1458489967

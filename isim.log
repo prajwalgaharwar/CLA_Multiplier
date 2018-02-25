@@ -1,0 +1,35 @@
+ command line:
+   ./test_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  3149
+
+Sun Mar 20 21:36:38 2016
+
+Total Line Count : 185
+
+ Elaboration time : 0.0156 sec.
+
+ Estimate current memory usage : 149.627 Meg. 
+
+ Total Signals          : 11
+ Total Nets             : 194
+ Total Signal Drivers   : 132
+ Total Blocks           : 7
+ Total Primitive Blocks : 1
+ Total Processes        : 130
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 194
+WARNING:UtilitiesC - Message file "Simulator.msg" wasn't found.
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.078 sec.
+
+ Estimate current memory usage : 158.802 Meg. 
+
+Sun Mar 20 21:37:00 2016
+

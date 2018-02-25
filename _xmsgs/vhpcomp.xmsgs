@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="UtilitiesC" num="0" delta="unknown" >Message file &quot;<arg fmt="%s" index="1">HDLParsers.msg</arg>&quot; wasn&apos;t found.
+</msg>
+
+<msg type="warning" file="UtilitiesC" num="0" delta="unknown" >Message file &quot;<arg fmt="%s" index="1">Simulator.msg</arg>&quot; wasn&apos;t found.
+</msg>
+
+</messages>
+

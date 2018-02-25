@@ -1,0 +1,12 @@
+V3 7
+FL $XILINX/cla_vhdl/cla.vhd 2016/03/20.21:35:47 J.36
+EN work/cla 1458489980 FL $XILINX/cla_vhdl/cla.vhd PB ieee/std_logic_1164 1179176983 \
+      PB ieee/std_logic_arith 1179176985 PB ieee/STD_LOGIC_UNSIGNED 1179176991
+AR work/cla/dataflow 1458489981 \
+      FL $XILINX/cla_vhdl/cla.vhd EN work/cla 1458489980
+FL $XILINX/cla_vhdl/test.vhw 2016/03/20.21:36:09 J.36
+EN work/test 1458489982 FL $XILINX/cla_vhdl/test.vhw PB ieee/std_logic_1164 1179176983 \
+      PB ieee/std_logic_arith 1179176985 PB ieee/STD_LOGIC_UNSIGNED 1179176991 \
+      PB ieee/STD_LOGIC_TEXTIO 1179176993 PB std/textio 1179176969
+AR work/test/testbench_arch 1458489983 \
+      FL $XILINX/cla_vhdl/test.vhw EN work/test 1458489982 CP cla

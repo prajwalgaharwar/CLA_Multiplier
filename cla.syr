@@ -1,0 +1,318 @@
+WARNING:UtilitiesC - Message file "Portability.msg" wasn't found.
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+WARNING:UtilitiesC - Message file "Xst.msg" wasn't found.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.10 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.10 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: cla.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cla.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cla"
+Output Format                      : NGC
+Target Device                      : xc3s400a-4-ft256
+
+---- Source Options
+Top Module Name                    : cla
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : cla.lso
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:UtilitiesC - Message file "HDLParsers.msg" wasn't found.
+Compiling vhdl file "C:/Xilinx92i/cla_vhdl/cla.vhd" in Library work.
+Entity <cla> compiled.
+Entity <cla> (Architecture <dataflow>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <cla> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <cla> in library <work> (Architecture <behavioral>).
+Entity <cla> analyzed. Unit <cla> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <cla>.
+    Related source file is "C:/Xilinx92i/cla_vhdl/cla.vhd".
+WARNING:Xst - Output <carry> is never assigned.
+    Found 31-bit xor2 for signal <sum<31:1>>.
+    Found 32-bit xor2 for signal <p>.
+Unit <cla> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 63
+ 1-bit xor2                                            : 63
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:UtilitiesC - Message file "DeviceResourceModel.msg" wasn't found.
+Loading device for application Rf_Device from file '3s400a.nph' in environment C:\Xilinx92i.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 63
+ 1-bit xor2                                            : 63
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <cla> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cla, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : cla.ngr
+Top Level Output File Name         : cla
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 98
+
+Cell Usage :
+# BELS                             : 63
+#      LUT2                        : 1
+#      LUT3                        : 60
+#      LUT4                        : 2
+# IO Buffers                       : 97
+#      IBUF                        : 64
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400aft256-4 
+
+ Number of Slices:                      36  out of   3584     1%  
+ Number of 4 input LUTs:                63  out of   7168     0%  
+ Number of IOs:                         98
+ Number of bonded IOBs:                 97  out of    195    49%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 40.964ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1120 / 33
+-------------------------------------------------------------------------
+Delay:               40.964ns (Levels of Logic = 33)
+  Source:            inp1<0> (PAD)
+  Destination:       sum<31> (PAD)
+
+  Data Path: inp1<0> to sum<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.849   0.611  inp1_0_IBUF (inp1_0_IBUF)
+     LUT4:I1->O            2   0.643   0.479  c_2_or00001 (c<2>)
+     LUT3:I2->O            2   0.648   0.479  c_3_or00001 (c<3>)
+     LUT3:I2->O            2   0.648   0.479  c_4_or00001 (c<4>)
+     LUT3:I2->O            2   0.648   0.479  c_5_or00001 (c<5>)
+     LUT3:I2->O            2   0.648   0.479  c_6_or00001 (c<6>)
+     LUT3:I2->O            2   0.648   0.479  c_7_or00001 (c<7>)
+     LUT3:I2->O            2   0.648   0.479  c_8_or00001 (c<8>)
+     LUT3:I2->O            2   0.648   0.479  c_9_or00001 (c<9>)
+     LUT3:I2->O            2   0.648   0.479  c_10_or00001 (c<10>)
+     LUT3:I2->O            2   0.648   0.479  c_11_or00001 (c<11>)
+     LUT3:I2->O            2   0.648   0.479  c_12_or00001 (c<12>)
+     LUT3:I2->O            2   0.648   0.479  c_13_or00001 (c<13>)
+     LUT3:I2->O            2   0.648   0.479  c_14_or00001 (c<14>)
+     LUT3:I2->O            2   0.648   0.479  c_15_or00001 (c<15>)
+     LUT3:I2->O            2   0.648   0.479  c_16_or00001 (c<16>)
+     LUT3:I2->O            2   0.648   0.479  c_17_or00001 (c<17>)
+     LUT3:I2->O            2   0.648   0.479  c_18_or00001 (c<18>)
+     LUT3:I2->O            2   0.648   0.479  c_19_or00001 (c<19>)
+     LUT3:I2->O            2   0.648   0.479  c_20_or00001 (c<20>)
+     LUT3:I2->O            2   0.648   0.479  c_21_or00001 (c<21>)
+     LUT3:I2->O            2   0.648   0.479  c_22_or00001 (c<22>)
+     LUT3:I2->O            2   0.648   0.479  c_23_or00001 (c<23>)
+     LUT3:I2->O            2   0.648   0.479  c_24_or00001 (c<24>)
+     LUT3:I2->O            2   0.648   0.479  c_25_or00001 (c<25>)
+     LUT3:I2->O            2   0.648   0.479  c_26_or00001 (c<26>)
+     LUT3:I2->O            2   0.648   0.479  c_27_or00001 (c<27>)
+     LUT3:I2->O            2   0.648   0.479  c_28_or00001 (c<28>)
+     LUT3:I2->O            2   0.648   0.479  c_29_or00001 (c<29>)
+     LUT3:I2->O            2   0.648   0.479  c_30_or00001 (c<30>)
+     LUT3:I2->O            2   0.648   0.590  c_31_or00001 (c<31>)
+     LUT3:I0->O            1   0.648   0.420  Mxor_sum<31>_Result1 (sum_31_OBUF)
+     OBUF:I->O                 4.520          sum_31_OBUF (sum<31>)
+    ----------------------------------------
+    Total                     40.964ns (25.452ns logic, 15.512ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+CPU : 5.98 / 6.11 s | Elapsed : 6.00 / 6.00 s
+ 
+--> 
+
+Total memory usage is 201440 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
